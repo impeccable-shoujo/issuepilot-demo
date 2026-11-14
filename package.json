@@ -1,0 +1,8 @@
+{
+	"name": "demo-stats",
+	"version": "1.0.0",
+	"description": "Tiny demo app used to test IssuePilot end to end",
+	"scripts": {
+		"test": "node --test test/"
+	}
+}
