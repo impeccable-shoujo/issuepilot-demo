@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a bug — a clear and complete report lets IssuePilot attempt an automatic fix.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction steps
+      description: Minimal steps or a snippet that reliably triggers the bug.
+      placeholder: |
+        1. Run `npm test`
+        2. Observe the failing assertion
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happens. Error output or a failing test is very helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Optional — error logs, failing test output, environment details.
+    validations:
+      required: false
